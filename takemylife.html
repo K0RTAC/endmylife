@@ -1,0 +1,105 @@
+<body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maxium-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <style type="text/css">
+    td {
+      word-break: normal;
+      width: 20%
+    }
+  </style>
+  <!-- 1 단계: 이 코드를 HTML 문서 HEAD에 복사하세요 -->
+  <script type="text/javascript">
+    <!-- Begin
+    var cnum1 = 0;
+    var cnum2 = 0;
+    var dnum1 = 0;
+    var dnum2 = 0;
+    var cstring = "좋다고 하기엔 묘하게 사람을 맥이는 상성. 과묵하고 진지해 보이는 외견에 비해 특정 주제를 꺼낼 시 음침한 면모를 보이기도 한다. 하지만 극한의 상황에서도 적응할 수 있도록 단련된 정신력은 가히 놀랍다. 늘 최전방에 진입 및 잠입, 심문에 전문가적 재능을 보이며 활동하고 있으나 특이한 점은 ███이라는 단어에 다소 민감한 반응을 보인다는 점에 있다. 자세한 것은 꾸준한 기록과 교류가 필요하다. 반복해서 폭력적인 상황에 노출되려는 성향은 ████에서 ███한 ████인가. 아직까진 알 수 없다. ████의 ████과 ██████의 연관성, ██████에 대해 ██████한 ██████를 █████ ██ ██████ ████. █████ ████ ██ █████ █████ ████, █████ ███ ███ ████ ████ ███ █████. *삭제된 기록*"
+
+    function containment()
+    {
+    if(cnum2<cstring.length){
+    cnum2++;
+    window.setTimeout(cdel,7392);
+    }
+    window.setTimeout(cwait,1);
+    }
+
+    function cwait(){
+    document.getElementById("cbox").value= cstring.substring(cnum1, cnum2);
+    }
+
+    function cdel(){
+    cnum1++;
+    if(cnum1==cnum2){
+    cnum1=0;
+    cnum2=0;
+    }
+    document.getElementById("cbox").value= cstring.substring(cnum1, cnum2);
+    }
+
+    function description()
+    {
+    if(dnum2<dstring.length){
+    dnum2++;
+    window.setTimeout(ddel,7392);
+    }
+    window.setTimeout(dwait,1);
+    }
+    function dwait(){
+      document.getElementById("dbox").value= dstring.substring(dnum1, dnum2);
+    }
+    function ddel(){
+    dnum1++;
+    if(dnum1==dnum2){
+    dnum1=0;
+    dnum2=0;
+    }
+    document.getElementById("dbox").value= dstring.substring(dnum1, dnum2);
+    }
+
+    function create(form) {
+
+    if (confirm("경고: 개인의 판단과 신념으로 임무를 거스를 생각 따위는 하지 말 것. 모든 처리는 군법에 따라 이행된다.")) {
+
+    window.alert("Schön Mädchen steht noch strack und gut: Todesstille fürchterlich. Sie werden diese Phase meistern können. Wie immer.");
+
+   }
+   }
+
+   // End -->
+</script>
+<!-- 2 단계: 이 코드를 HTML 문서의 BODY 내에 집어넣으세요 -->
+<div style="font-family: verdana, 나눔고딕, sans-serif; font-size: 0.8em;">
+  <form>
+    <p>
+      <b>이름:</b> 양준석
+    </p>
+    <p>
+      <b>생년월일:</b> 2005년 ██월 ██일
+    </p>
+    <p>
+      <b>국적:</b> 대한민국
+    </p>
+    <p>
+      <b>소속:</b> ████████
+    </p>
+    <p>
+      <b>언어:</b> 한국어, 영어. 독일어 습득 과정 중에 있음.
+    </p>
+    <p>
+      <b><i>누군가의 인생을 들여다 보는 건 현명한 선택이 아니야</i>:</b> <input type="password" name="pwd" value="YangJunhee">
+    </p>
+    <p>
+      <b>참고 사항:</b>
+    </p>
+    <p>
+      <textarea rows="8" style="width:95%;" id="cbox" oninput="containment()" wrap="hard">
+      </textarea>
+    </p>
+
+    <div style="margin:0 auto; width: 10%; height: auto;">
+      <input type="button" value="제출" onclick="create(this.form)">
+    </div>
+</form>
